@@ -11,20 +11,20 @@
  <nav>
   <ul>
    <li><a href="#">Inicio</a></li>
-   <li><a href="#">Educación</a></li>
-   <li><a href="#">Experiencia</a></li>
-   <li><a href="#">Habilidades</a></li>
-   <li><a href="#">Contacto</a></li>
+   <li><a href="#educacion">Educación</a></li>
+   <li><a href="#experiencia">Experiencia</a></li>
+   <li><a href="#habilidades">Habilidades</a></li>
+   <li><a href="#formulario">Formulario</a></li>
+   <li><a href="#lugarEncuentro">Lugar de encuentro</a></li>
+   <li><a href="#contacto">Contacto</a></li>
   </ul>
  </nav>
  <section id="informacion-personal">
  <h2>Información personal</h2>
- <p>
-  Nombre: <span>Luis Quezada</span>
- </p>
- <p>
-  Correo electrónico: <span>luquaris@espol.edu.ec</span>
- </p>
+ <img src="https://placehold.co/400" width="200">
+ <p>Nombre: <span>Luis Quezada</span></p>
+ <p>Edad: <span>21</span></p>
+ <p>Profesión: <span>Ingenieria en la ciencia de la computación</span></p>
  </section>
  <section id="educacion">
  <h2>Educación</h2>
@@ -40,7 +40,8 @@
  <p>
   Descripción:
   <ul>
-   <li>Trabajo en equipo</li>
+   <li>Diseño de paginas web.</li>
+   <li>Trabajo en equipo.</li>
   </ul>
  </p>
  </section>
@@ -52,6 +53,47 @@
    <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
    <li>Otros: Inglés</li>
   </ul>
+ </section>
+ <section id="formulario">
+    <h2>Formulario</h2>
+    <p>Para ponernos en contacto complete el siguiente formulario</p>
+    <form action method="get">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" if="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="correo">Correo:</label>
+            <input type="text" name="correo" if="correo" required>
+        </div>
+        <br>
+        <div>
+            <label for="telefono">Telefono:</label>
+            <input type="text" name="telefono" if="telefono">
+        </div>
+        <br>
+        <div>
+            <label for="tipo">Tipo de servicio que desea:</label>
+            <select id="tipo" name="tipo">
+                <option value="    ">    </option>
+                <option value="Diseño de pagina web">Diseño de pagina web</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+ </section>
+ <section id="lugarEncuentro">
+    <h2>Lugar de encuentro</h2>
+    <p>Si desea encontrarse conmigo nos podemos reunir aqui.</p>
+    <img src="https://placehold.co/600x400">
+ </section>
+ <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Correo electrónico: <span>luquaris@espol.edu.ec</span></p>
  </section>
  <footer>
   <p>Copyright © 2024 Luis Quezada</p>
