@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+/*#078080 #f45d48 #232323*/
+
+* {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f2;
+}
+
 h1, h2, h3 {
     font-family: "Lora";
     color: #232323;
 }
 
-
-* {
-    font-family: Arial, sans-serif;
-    background-color: #078080;
+p{
     color: #222525;
+}
+
+form {
+    box-sizing: border-box;
+    margin: 20px;
+    border: 1px solid #232323;
+    padding: 10px;
 }
