@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Currículum</title>
-    <link rel='stylesheets' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="stylesheets/style.css" type='text/css' />
 </head>
 <body>
     <header>
@@ -20,19 +20,28 @@
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+    <h2>Información personal</h2>
     <section id="informacion-personal">
-        <h2>Información personal</h2>
-        <img src="images/profile.jpg" width="170">
-        <p>Nombre: <span>Luis Quezada</span></p>
-        <p>Edad: <span>21</span></p>
-        <p>Profesión: <span>Ingenieria en la ciencia de la computación</span></p>
+        <img id="foto" src="images/profile.jpg" width="170">
+        <section id="info">
+            <p>Nombre: <span>Luis Quezada</span></p>
+            <p>Edad: <span>21</span></p>
+            <p>Profesión: <span>Ingenieria en la ciencia de la computación</span></p>
+        </section>
     </section>
     <section id="educacion">
         <h2>Educación</h2>
-        <p>Institución: <span>Instituto Particular Abdón Calderón</span></p>
-        <p>Fechas: <span>2010 - 2020</span></p>
-        <p>Institución: <span>Escuela Superior Politecnica del Litoral</span></p>
-        <p>Fechas: <span>2021 - 2024</span></p>
+        <div id="CuadroEducacion">
+            <div id="cuadro1">
+                <p>Institución: <span>Instituto Particular Abdón Calderón</span></p>
+                <p>Fechas: <span>2010 - 2020</span></p>
+            </div>
+            <div id="cuadro2">
+                <p>Institución: <span>Escuela Superior Politecnica del Litoral</span></p>
+                <p>Fechas: <span>2021 - 2024</span></p>
+            </div>
+        </div>
+        <br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/wg3tIeVUcHM?si=MRTTno-5tQXvqFG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
     <section id="experiencia">
@@ -56,7 +65,7 @@
     </section>
     <section id="formulario">
         <h2>Formulario</h2>
-        <p>Para ponernos en contacto complete el siguiente formulario</p>
+        <p>Para ponernos en contacto complete el siguiente formulario:</p>
         <form action method="get">
             <div>
                 <label>Nombre:</label>
@@ -82,7 +91,7 @@
             </div>
             <br>
             <div>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" id="boton">
             </div>
         </form>
     </section>
