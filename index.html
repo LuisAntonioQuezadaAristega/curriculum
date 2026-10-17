@@ -2,113 +2,239 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Títulos, cargos, datos biográficos de Luis Quezada"/>
-    <meta name="keywords" content="Currículum, Luis, Quezada"/>
-    <meta name="author" content="Luis Quezada" />
+    <meta name="keywords" content="Curriculum, Luis, Antonio, Quezada, Aristega"/>
     <title>Currículum Luis Quezada</title>
-    <link rel="stylesheet" href="stylesheets/style.css" type='text/css' />
+    <link rel="stylesheet" href="stylesheets/styleSlide.css">
+    <link rel="stylesheet" href="stylesheets/style.css" type='text/css'/>
 </head>
 <body>
-    <header>
-        <h1>Currículum</h1>
+    <section id="perfil"></section>
+    <!-- Encabezado Principal / Superior -->
+    <header class="main-header">
+        <div class="header-left">
+            <ul>
+                <li><a class="dot" href="mailto:luquaris@espol.edu.ec" >
+                    <img class="icon" src="images/correoB.png">
+                    </a> luquaris@espol.edu.ec</li>
+                <li><a class="dot" href="https://x.com/luquaris18" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" src="images/Twitter_X.png">
+                </a> luquaris18</li>
+                <li><a class="dot" href="https://github.com/LuisAntonioQuezadaAristega" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" src="images/github.png">
+                </a> LuisAntonioQuezadaAristega</li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <h1>Luis Antonio<br>Quezada Aristega</h1>
+            <p>Ingeniero en computacion</p>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#formulario">Formulario</a></li>
-            <li><a href="#lugarEncuentro">Lugar de encuentro</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <a href="#perfil">Perfil</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#estudios">Estudios</a>
+        <a href="#proyectos">Proyectos universitarios</a>
+        <a href="#experiencia">Experiencia laboral</a>
     </nav>
-    <h2>Información personal</h2>
-    <section id="informacion-personal">
-        <img id="foto" src="images/profile.jpg" width="170">
-        <section id="info">
-            <p>Nombre: <span>Luis Quezada</span></p>
-            <p>Edad: <span>21</span></p>
-            <p>Profesión: <span>Ingenieria en la ciencia de la computación</span></p>
-        </section>
-    </section>
-    <section id="educacion">
-        <h2>Educación</h2>
-        <div id="CuadroEducacion">
-            <div id="cuadro1">
-                <p>Institución: <span>Lorem ipsum dolor sit amet</span></p>
-                <p>Fechas: <span>2007 - 2020</span></p>
+
+    <!-- Sección: Perfil -->
+    <section class="section-profile">
+        <div class="profile-container">
+            <!-- Columna Izquierda: Foto y Etiqueta -->
+            <div class="profile-left">
+                <div><img class="avatar" src="images/profile.jpeg"></div>
+                <div class="sign">
+                    <img src="images/inicio.png">
+                    <div class="signText">Perfil</div>
+                    <img src="images/final.png">
+                </div>
+                <!-- <div class="badge">Perfil</div> -->
             </div>
-            <div id="cuadro2">
-                <p>Institución: <span>Escuela Superior Politecnica del Litoral</span></p>
-                <p>Fechas: <span>2021 - 2024</span></p>
+            <!-- Columna Derecha: Información -->
+            <div class="profile-right">
+                <div class="card-info fade-in-element">
+                    <h3>Sobre mí</h3>
+                    <p>
+                        Egresado de Ingeniería en Computación de la ESPOL, cuento con experiencia en:<br>
+                        - Desarrollo de soluciones de software y videojuegos.<br>
+                        - El diseño de base de datos<br>
+                        - La limpieza y preparación de datos.
+                    </p>
+                    <h3>Intereses</h3>
+                    <p>El desarrollo de videojuegos, el dibujo y la pintura.</p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Sección: Habilidades -->
+    <section id="habilidades" class="section-skills">
+        <div class="skills-title-container">
+            <div class="sign">
+                <img src="images/inicio.png">
+                <div class="signText">Habilidades</div>
+                <img src="images/final.png">
+            </div>
+        </div>
+        
+        <div class="skills-content">
+            <!-- Columna Izquierda: Idiomas y Lenguajes -->
+            <div class="skills-left fade-in-element">
+                <div class="skill-group">
+                    <h4>Idiomas:</h4>
+                    <p>Español (Nativo), Ingles (intermedio).</p>
+                </div>
+                <div class="skill-group">
+                    <h4>He programado en los siguientes lenguajes:</h4>
+                    <p>Python, Java, Javascript, Typescript, C#, GDScript y VBA (Excel).</p>
+                </div>
+            </div>
+            <!-- Columna Derecha: Software -->
+            <div class="skills-right fade-in-element">
+                <div class="skill-group">
+                    <h4>Software y servicios usados:</h4>
+                    <ul>
+                        <li>Rstudio y Google collab para creación de gráfico y el análisis de datos.</li>
+                        <li>Supabase para crear base de datos y conectarla a una página web.</li>
+                        <li>Figma para el prototipado de soluciones de software.</li>
+                        <li>Visual studio, Godot Engine y Unity para el desarrollo de software.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Estudios -->
+    <section id="estudios" class="section-skills">
+        <div class="skills-title-container">
+            <div class="sign">
+                <img src="images/inicio.png">
+                <div class="signText">Estudios</div>
+                <img src="images/final.png">
+            </div>
+        </div>
+        
+        <div class="skills-content">
+            <!-- Columna Izquierda: Ipac -->
+            <div class="skills-left fade-in-element">
+                <div class="skill-group">
+                    <h4>2021 - Instituto Particular Abdón Calderón</h4>
+                    <p>Bachillerato en ciencias</p>
+                </div>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0222140739393!2d-79.86248342503235!3d-2.1451776978357304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6cf7329fb22f%3A0x85df6008ac2e214a!2sIPAC!5e0!3m2!1ses!2sec!4v1791319557073!5m2!1ses!2sec" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <!-- Columna Derecha: Espol -->
+            <div class="skills-right fade-in-element">
+                <div class="skill-group">
+                    <h4>2026 - Escuela Superior Politécnica del Litoral</h4>
+                    <p>Ingenieria en computación</p>
+                </div>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7974.024245618376!2d-79.96077070091197!3d-2.1490456826546223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sespol!5e0!3m2!1ses!2sec!4v1791319386272!5m2!1ses!2sec" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Proyectos universitarios -->
+    <section id="proyectos" class="section-skills">
+        <div class="skills-title-container">
+            <div class="sign">
+                <img src="images/inicio.png">
+                <div class="signText">Proyectos</div>
+                <img src="images/final.png">
+            </div>
+        </div>
+        <div class="skills-content">
+            <!-- dashboard -->
+            <div class="profile-left ">
+                <div class="card-info fade-in-element">
+                    <h3>dashboard (Sitio web)</h3>
+                    <p>Se conecta con el API de openweathermap para obtener datos<br>
+                        meteorológicos de Guayaquil, y representarlos con elementos de React<br>
+                        Google Chart.</p>
+                    <img src="images/dashboard.gif" class="gif">
+                </div>
+                <br>
+                <a href="https://luisantonioquezadaaristega.github.io/dashboard/" target="_blank" rel="noopener noreferrer">
+                    <div class="badge">Ir</div>
+                </a>
+            </div>
+            <!-- OpenCV_Fuit_Ninja -->
+            <div class="profile-left">
+                <div class="card-info fade-in-element">
+                    <h3>OpenCV_Fuit_Ninja (Codigo)</h3>
+                    <p>Creado con Pygame, hace uso de Mediapipe para detectar el dedo indice<br>
+                        del jugador con la cámara y procesar la imagen con Opencv para agregar<br>
+                        los elementos del juego.</p>
+                    <img src="images/FruitNinja.gif" class="gif">
+                </div>
+                <br>
+                <a href="https://github.com/LuisAntonioQuezadaAristega/OpenCV_Fuit_Ninja" target="_blank" rel="noopener noreferrer">
+                    <div class="badge">Ir</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Experiencia laboral -->
+    <section id="experiencia" class="section-skills">
+        <div class="skills-title-container">
+            <div class="sign">
+                <img src="images/inicio.png">
+                <div class="signText">Experiencia laboral</div>
+                <img src="images/final.png">
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="section-skills">
+        <div class="gallery-container">
+            <div class="card-info gallery-item fade-in-element">
+                <h3>Desarrollador back-end de Dashboard AI de Solinal</h3>
+                <p>
+                    - Desarrolle y documente los endpoints del backend asegurando un sistema escalable y bien estructurado.<br>
+                    - Revise las funcionalidades con las que contaría la aplicación
+                    definí las entidades de datos, sus atributos, sus relaciones y los diagrame para
+                    finalmente revisarlo con empleados de Solinal e implementarlo.
+                </p>
+            </div>
+            
+            <div class="card-info gallery-item fade-in-element">
+                <h3>Desarrollador de Juego Galapagos-2D de ESPOL | Motor: Godot</h3>
+                <p> - Implemente traducción mediante archivos JSON, facilitando la modificación de textos. <br>
+                    - Desarrolle un modo contrarreloj con niveles de dificultad, que muestra los 3 mejores récords.
+                </p>
+            </div>
+            
+            <div class="card-info gallery-item fade-in-element">
+                <h3>Desarrollador de Plataforma Inmersiva de Videos 360 (Ecoaventuras 360) | Motor: Unity</h3>
+                <p> - Implemente un sistema que permite al usuario interactuar con los elementos del video a través de gestos (alear, tocar, agarrar).<br>
+                    - Programé un sistema de detección de mirada para guiar al usuario, mostrarle puntos de interés del video e implementar una interfaz dentro de su campo de visión. 
+                </p>
+            </div>
+        </div>
+        <nav class="gallery-navigation fade-in-element">
+            <button class="badge nav-button prev-button">Anterior</button>
+            <button class="badge nav-button next-button">Siguiente</button>
+        </nav>
         <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wg3tIeVUcHM?si=MRTTno-5tQXvqFG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="downloadDoc">
+            <a href="doc/curriculum.pdf" download target="_blank" rel="noopener noreferrer">
+                <div class="badge">Descargar curiculum</div>
+            </a>
+        </div>
     </section>
-    <section id="experiencia">
-        <h2>Experiencia</h2>
-        <p>
-        Descripción:
-        <ul>
-            <li>Diseño de paginas web.</li>
-            <li>Trabajo en equipo.</li>
-        </ul>
-        </p>
-    </section>
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Lenguajes de programación: Python, Java</li>
-            <li>Bases de datos: MySQL</li>
-            <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
-            <li>Otros: Inglés</li>
-        </ul>
-    </section>
-    <section id="formulario">
-        <h2>Formulario</h2>
-        <p>Para ponernos en contacto complete el siguiente formulario:</p>
-        <form action method="get">
-            <div>
-                <label>Nombre:</label>
-                <input type="text" name="name" id="name" required>
-            </div>
-            <br>
-            <div>
-                <label>Correo:</label>
-                <input type="text" name="correo" id="correo" required>
-            </div>
-            <br>
-            <div>
-                <label>Telefono:</label>
-                <input type="text" name="telefono" id="telefono">
-            </div>
-            <br>
-            <div>
-                <label for="tipo">Tipo de servicio que desea:</label>
-                <select id="tipo" name="tipo">
-                    <option value="    ">    </option>
-                    <option value="Diseño de pagina web">Diseño de pagina web</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <input type="submit" value="Enviar" id="boton">
-            </div>
-        </form>
-    </section>
-    <section id="lugarEncuentro">
-        <h2>Lugar de encuentro</h2>
-        <p>Si desea encontrarse conmigo nos podemos reunir aqui.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4741.451850082347!2d-79.90518577505111!3d-2.126818547186325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d433fd6b20d%3A0x515c4f92dd387618!2sC.C.%20Riocentro%20Norte!5e0!3m2!1ses!2sec!4v1716746159358!5m2!1ses!2sec" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Correo electrónico: <span>Lorem@ipsum</span></p>
-    </section>
-    <footer>
-        <p>Copyright © 2024 Luis Quezada</p>
+
+    <footer class="main-header">
+        <div class="header-left">
+            <p>Copyright © 2024 Luis Quezada</p>
+        </div>
+        <div class="header-right">
+        </div>
     </footer>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/slide.js"></script> 
 </body>
 </html>

@@ -1,0 +1,35 @@
+/* Estilo básico para el Slider*/
+#gallery {
+   width: 100%;
+   margin: auto;
+   overflow: hidden;
+}
+
+.gallery-container {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+   min-width: 64%;
+   margin-left: 274px;
+}
+
+/* Navegación del Slider */
+.gallery-navigation {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 25px 10%;
+}
+
+@media (max-width: 768px) {
+   .gallery-item {
+      min-width: 86%;
+      margin-left: 20px;
+   }
+
+   .gallery-navigation {
+      padding: 25px 0%;
+   }
+}
